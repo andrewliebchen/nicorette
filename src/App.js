@@ -1,13 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
+import FeedItem from "./FeedItem";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Hello world</h1>
-      </div>
-    );
-  }
-}
+const App = props => (
+  <div>
+    <FeedItem />
+    <FeedItem />
+    <FeedItem />
+  </div>
+);
 
 export default App;
