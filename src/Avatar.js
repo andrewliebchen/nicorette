@@ -1,20 +1,43 @@
 import React from "react";
 import Avataaar from "avataaars";
 import styled from "styled-components";
+import random from "lodash.random";
+import {
+  accessoriesTypes,
+  clothesColors,
+  clothesTypes,
+  eyebrowTypes,
+  eyeTypes,
+  facialHairTypes,
+  hairColors,
+  mouthTypes,
+  skinColors,
+  topTypes
+} from "./avatarTypes";
 
-// Gotta randomize these params
+const getType = type => type[random(0, type.length)];
 
 const Root = styled.div`
   width: 40px;
   height: 40px;
-  background-color: #ccc;
-  border-radius: 40px;
-  overflow: hidden;
 `;
 
 const Avatar = props => (
   <Root>
-    <Avataaar style={{ width: "40px", height: "40px" }} />
+    <Avataaar
+      accessoriesType={getType(accessoriesTypes)}
+      avatarStyle="Circle"
+      clotheColor={getType(clothesColors)}
+      clotheType={getType(clothesTypes)}
+      eyebrowType={getType(eyebrowTypes)}
+      eyeType={getType(eyeTypes)}
+      facialHairType={getType(facialHairTypes)}
+      hairColors={getType(hairColors)}
+      mouthType={getType(mouthTypes)}
+      skinColor={getType(skinColors)}
+      style={{ width: "40px", height: "40px" }}
+      topType={getType(topTypes)}
+    />
   </Root>
 );
 
