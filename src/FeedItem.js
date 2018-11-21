@@ -5,6 +5,9 @@ import hello from "hello-color";
 import Avatar from "./Avatar";
 import Text from "./Text";
 import { Box, Flex } from "reflexbox";
+import PropTypes from "prop-types";
+import { feedTypes } from "./types";
+import LikeButton from "./LikeButton";
 
 const Feature = styled.div`
   background-color: ${props => props.hue.base};
@@ -24,7 +27,12 @@ const FeedItem = props => (
     </Flex>
     <Feature hue={hello(bikeshed())}>FeedItem</Feature>
     <Text />
+    <LikeButton />
   </Flex>
 );
+
+FeedItem.propTypes = {
+  type: PropTypes.oneOf(feedTypes)
+};
 
 export default FeedItem;

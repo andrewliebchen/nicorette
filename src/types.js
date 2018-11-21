@@ -1,4 +1,8 @@
-export const topTypes = [
+export const feedTypes = ["image", "text", "video", "carousel"];
+
+export const avataaarTypes = {};
+
+avataaarTypes.tops = [
   "NoHair",
   "Eyepatch",
   "Hat",
@@ -36,7 +40,7 @@ export const topTypes = [
   "ShortHairTheCaesarSidePart"
 ];
 
-export const accessoriesTypes = [
+avataaarTypes.accessories = [
   "Blank",
   "Kurt",
   "Prescription01",
@@ -46,7 +50,7 @@ export const accessoriesTypes = [
   "Wayfarers"
 ];
 
-export const hairColors = [
+avataaarTypes.hairColors = [
   "Auburn",
   "Black",
   "Blonde",
@@ -59,7 +63,7 @@ export const hairColors = [
   "SilverGray"
 ];
 
-export const facialHairTypes = [
+avataaarTypes.facialHair = [
   "Blank",
   "BeardMedium",
   "BeardLight",
@@ -68,7 +72,7 @@ export const facialHairTypes = [
   "MoustacheMagnum"
 ];
 
-export const clothesTypes = [
+avataaarTypes.clothes = [
   "BlazerShirt",
   "BlazerShirt",
   "BlazerSweater",
@@ -81,7 +85,7 @@ export const clothesTypes = [
   "ShirtVNeck"
 ];
 
-export const eyeTypes = [
+avataaarTypes.eyes = [
   "Close",
   "Cry",
   "Default",
@@ -96,7 +100,7 @@ export const eyeTypes = [
   "WinkWacky"
 ];
 
-export const eyebrowTypes = [
+avataaarTypes.eyebrows = [
   "Angry",
   "AngryNatural",
   "Default",
@@ -111,7 +115,7 @@ export const eyebrowTypes = [
   "UpDownNatural"
 ];
 
-export const mouthTypes = [
+avataaarTypes.mouths = [
   "Concerned",
   "Default",
   "Disbelief",
@@ -126,7 +130,7 @@ export const mouthTypes = [
   "Vomit"
 ];
 
-export const skinColors = [
+avataaarTypes.skinColors = [
   "Tanned",
   "Yellow",
   "Pale",
@@ -136,7 +140,7 @@ export const skinColors = [
   "Black"
 ];
 
-export const clothesColors = [
+avataaarTypes.clothesColors = [
   "Black",
   "Blue01",
   "Blue02",
