@@ -12,12 +12,12 @@ import LikeButton from "./LikeButton";
 const Feature = styled.div`
   background-color: ${props => props.hue.base};
   height: 200px;
-  width: 200px;
+  width: 100%;
   color: ${props => props.hue.color};
 `;
 
 const FeedItem = props => (
-  <Flex column>
+  <Flex column p={2}>
     <Flex align="center">
       <Avatar />
       <Box pl={2} w={1}>
@@ -25,7 +25,7 @@ const FeedItem = props => (
         <Text lines={1} size={2} />
       </Box>
     </Flex>
-    <Feature hue={hello(bikeshed())}>FeedItem</Feature>
+    <Feature hue={hello(bikeshed())} />
     <Text />
     <LikeButton />
   </Flex>

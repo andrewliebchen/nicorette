@@ -17,7 +17,11 @@ const TextLine = styled.div`
 const Text = props => (
   <div>
     {times(props.lines, i => (
-      <TextLine key={i} length={random(90, 98)} {...props} />
+      <TextLine
+        key={i}
+        length={props.lines > 1 ? random(90, 98) : random(40, 80)}
+        {...props}
+      />
     ))}
   </div>
 );
