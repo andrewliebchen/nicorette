@@ -1,4 +1,4 @@
-export const feedTypes = ["image", "text", "video", "carousel"];
+export const feedTypes = ["image", "video", "carousel"];
 
 export const avataaarTypes = {};
 
