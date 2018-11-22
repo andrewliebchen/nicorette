@@ -1,21 +1,23 @@
+import { Box } from "reflexbox";
 import React from "react";
 import styled from "styled-components";
 import random from "lodash.random";
 import times from "lodash.times";
 import PropTypes from "prop-types";
+import { themeGet } from "styled-system";
 
 const heights = [18, 14, 8];
 
 const TextLine = styled.div`
   height: ${props => heights[props.size]}px;
-  background-color: #ccc;
+  background-color: ${themeGet("colors.gray2")};
   border-radius: 10px;
   width: ${props => props.length}%;
   margin-bottom: ${props => heights[props.size] * 1.6 - heights[props.size]}px;
 `;
 
 const Text = props => (
-  <div>
+  <Box {...props}>
     {times(props.lines, i => (
       <TextLine
         key={i}
@@ -23,7 +25,7 @@ const Text = props => (
         {...props}
       />
     ))}
-  </div>
+  </Box>
 );
 
 Text.defaultProps = {
