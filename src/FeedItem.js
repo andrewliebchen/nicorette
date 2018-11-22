@@ -11,14 +11,13 @@ import React from "react";
 import styled from "styled-components";
 import Text from "./Text";
 import Video from "./Video";
-import { themeGet } from "styled-system";
 
 const Root = styled(Flex)`
   background-color: white;
 `;
 
 const Feature = styled.div`
-  height: 200px;
+  height: 60vw;
   width: 100%;
 `;
 
