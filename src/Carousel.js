@@ -29,9 +29,7 @@ const Carousel = props => (
             index={i}
             color={props.hue.base}
             slideCount={slideCount}
-          >
-            Slide number {i}
-          </CarouselSlide>
+          />
         ))}
       </Slider>
     </CarouselProvider>
