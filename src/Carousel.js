@@ -23,7 +23,7 @@ const Carousel = props => (
       visibleSlides={1.5}
     >
       <Slider>
-        {times(3, i => (
+        {times(slideCount, i => (
           <CarouselSlide
             key={i}
             index={i}

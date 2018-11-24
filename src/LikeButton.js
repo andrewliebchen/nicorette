@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import theme from "./theme";
 import styled, { keyframes } from "styled-components";
-import { themeGet } from "styled-system";
 
 const explode = keyframes`
   0% {

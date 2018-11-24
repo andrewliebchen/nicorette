@@ -11,6 +11,7 @@ import React from "react";
 import styled from "styled-components";
 import Text from "./Text";
 import Video from "./Video";
+import TextFeature from "./TextFeature";
 
 const Root = styled(Flex)`
   background-color: white;
@@ -30,6 +31,9 @@ const FeatureItem = type => {
       break;
     case "carousel":
       item = <Carousel hue={hue} />;
+      break;
+    case "text":
+      item = <TextFeature hue={hue} />;
       break;
     default:
       item = <Image hue={hue} />;

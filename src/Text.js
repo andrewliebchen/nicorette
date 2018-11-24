@@ -1,4 +1,4 @@
-import { Box } from "reflexbox";
+import { Flex } from "reflexbox";
 import React from "react";
 import styled from "styled-components";
 import random from "lodash.random";
@@ -10,14 +10,14 @@ const heights = [18, 14, 8];
 
 const TextLine = styled.div`
   height: ${props => heights[props.size]}px;
-  background-color: ${themeGet("colors.gray2")};
+  background-color: ${props => props.color || themeGet("colors.gray2")};
   border-radius: 10px;
   width: ${props => props.length}%;
   margin-bottom: ${props => heights[props.size] * 1.6 - heights[props.size]}px;
 `;
 
 const Text = props => (
-  <Box {...props}>
+  <Flex column {...props}>
     {times(props.lines, i => (
       <TextLine
         key={i}
@@ -25,7 +25,7 @@ const Text = props => (
         {...props}
       />
     ))}
-  </Box>
+  </Flex>
 );
 
 Text.defaultProps = {
@@ -35,7 +35,8 @@ Text.defaultProps = {
 
 Text.propTypes = {
   size: PropTypes.oneOf([0, 1, 2]),
-  lines: PropTypes.number
+  lines: PropTypes.number,
+  color: PropTypes.string
 };
 
 export default Text;
