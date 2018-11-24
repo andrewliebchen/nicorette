@@ -14,6 +14,8 @@ const TextLine = styled.div`
   border-radius: 10px;
   width: ${props => props.length}%;
   margin-bottom: ${props => heights[props.size] * 1.6 - heights[props.size]}px;
+  margin-left: ${props => props.center && "auto"};
+  margin-right: ${props => props.center && "auto"};
 `;
 
 const Text = props => (
@@ -21,7 +23,11 @@ const Text = props => (
     {times(props.lines, i => (
       <TextLine
         key={i}
-        length={props.lines > 1 ? random(90, 98) : random(40, 80)}
+        length={
+          props.lines > 1 && i < props.lines - 1
+            ? random(85, 98)
+            : random(40, 80)
+        }
         {...props}
       />
     ))}
@@ -36,7 +42,8 @@ Text.defaultProps = {
 Text.propTypes = {
   size: PropTypes.oneOf([0, 1, 2]),
   lines: PropTypes.number,
-  color: PropTypes.string
+  color: PropTypes.string,
+  center: PropTypes.boolean
 };
 
 export default Text;
