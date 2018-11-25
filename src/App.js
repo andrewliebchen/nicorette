@@ -1,15 +1,18 @@
+import { BrowserView, MobileView } from "react-device-detect";
 import { ThemeProvider } from "styled-components";
-import React from "react";
-import theme from "./theme";
+import Banner from "./Banner";
 import Feed from "./Feed";
 import Header from "./Header";
-import { BrowserView, MobileView } from "react-device-detect";
-import Banner from "./Banner";
+import LandingPage from "./LandingPage";
+import React from "react";
+import theme from "./theme";
 
 const App = props => (
   <ThemeProvider theme={theme}>
     <div>
-      <BrowserView>This is a browser</BrowserView>
+      <BrowserView>
+        <LandingPage />
+      </BrowserView>
       <MobileView>
         <Header />
         <Feed />
