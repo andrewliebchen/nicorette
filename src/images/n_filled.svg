@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="639px" height="512px" viewBox="0 0 639 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>n_filled</title>
+    <desc>Created with Sketch.</desc>
+    <g id="app-icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="custom_icon" transform="translate(-193.000000, -256.000000)" fill-rule="nonzero">
+            <g id="n_filled" transform="translate(193.000000, 256.000000)">
+                <polygon id="Path" fill="#97A1A7" points="255 340.887728 255 512 128 512 128 171.112272"></polygon>
+                <polygon id="Path" fill="#CFD3D6" points="511 340.887728 383 169.775457 383 0 511 0"></polygon>
+                <path d="M511,512 L128,0 L256,2.13162821e-14 L511,340.887728 L511,0 L639,0 L639,512 L511,512 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <path d="M128,4.97379915e-14 L511,512 L383,512 L128,171.112272 L128,512 L1.36424205e-12,512 L1.36424205e-12,1.70530257e-12 L128,1.70530257e-12 Z" id="Combined-Shape" fill="#5F6E78"></path>
+            </g>
+        </g>
+    </g>
+</svg>
