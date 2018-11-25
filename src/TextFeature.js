@@ -25,7 +25,7 @@ const TextFeature = props => (
             ? "rgba(0, 0, 0, 0.15)"
             : "rgba(255, 255, 255, 0.2)"
         }
-        center
+        alignCenter
         lines={4}
       />
     </Flex>

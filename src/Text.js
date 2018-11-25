@@ -14,12 +14,12 @@ const TextLine = styled.div`
   border-radius: 10px;
   width: ${props => props.length}%;
   margin-bottom: ${props => heights[props.size] * 1.6 - heights[props.size]}px;
-  margin-left: ${props => props.center && "auto"};
-  margin-right: ${props => props.center && "auto"};
+  margin-left: ${props => props.alignCenter && "auto"};
+  margin-right: ${props => props.alignCenter && "auto"};
 `;
 
 const Text = props => (
-  <Flex column {...props}>
+  <Flex column w={props.w}>
     {times(props.lines, i => (
       <TextLine
         key={i}
@@ -43,7 +43,8 @@ Text.propTypes = {
   size: PropTypes.oneOf([0, 1, 2]),
   lines: PropTypes.number,
   color: PropTypes.string,
-  center: PropTypes.boolean
+  alignCenter: PropTypes.bool,
+  w: PropTypes.number
 };
 
 export default Text;
