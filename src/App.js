@@ -4,10 +4,7 @@ import theme from "./theme";
 import Feed from "./Feed";
 import Header from "./Header";
 import { BrowserView, MobileView } from "react-device-detect";
-
-if (window.navigator.standalone) {
-  alert("hi there");
-}
+import Banner from "./Banner";
 
 const App = props => (
   <ThemeProvider theme={theme}>
@@ -16,6 +13,7 @@ const App = props => (
       <MobileView>
         <Header />
         <Feed />
+        {window.navigator.standalone || <Banner />}
       </MobileView>
     </div>
   </ThemeProvider>

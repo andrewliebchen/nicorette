@@ -26,7 +26,7 @@ const ColorBox = styled(Box)`
 const CarouselSlide = props => (
   <Slide index={props.index}>
     <SlideBox ml={2} column justify="space-between">
-      <ColorBox w={1} auto color={props.color} />
+      <ColorBox w={1} auto color={props.color} index={props.index} />
       <Box p={2}>
         <Text lines={2} />
       </Box>
