@@ -9,6 +9,7 @@
     "hello-color": "^1.0.1",
     "lodash.random": "^3.2.0",
     "lodash.times": "^4.3.2",
+    "parameller": "^1.2.1",
     "prop-types": "^15.6.2",
     "pure-react-carousel": "^1.17.0",
     "react": "^16.6.3",
