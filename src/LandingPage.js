@@ -27,7 +27,7 @@ const LandingPage = props => (
         <img src={logo} height={48} alt="Nicorette logo" />
       </Box>
 
-      <h1>Feed your feed cravings. Safely.</h1>
+      <h1>Feed your feed cravings, safely.</h1>
       <p>
         <b>Nicorette</b> gives you all the satisfaction from scrolling through
         your endless Facebook, Twitter, or Instagram feed without the risk of
@@ -38,8 +38,8 @@ const LandingPage = props => (
         news, flame wars, trolling, or retargeting ads.
       </p>
       <p>
-        Add <b>Nicorette</b> to your phone's homescreen, and satisify your
-        scroll cravings safely!
+        Add <b>Nicorette</b> to your phone's homescreen, and satisfy your scroll
+        cravings safely!
       </p>
       <small>
         Brought to you by <a href="andrewliebchen.com">me</a>
